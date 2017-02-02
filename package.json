@@ -1,0 +1,35 @@
+{
+  "name": "rails-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate app for Rails and React, using webpack",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/webpack/bin/webpack.js --progress --colors",
+    "webpack-watch": "./node_modules/webpack/bin/webpack.js --progress --colors --watch",
+    "webpack-production": "./node_modules/webpack/bin/webpack.js --colors --config webpack.config.prod"
+  },
+  "author": "IP",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.22.1",
+    "babel-loader": "6.2.10",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-react": "6.22.0",
+    "css-loader": "0.26.1",
+    "eslint": "3.14.1",
+    "eslint-loader": "1.6.1",
+    "eslint-plugin-react": "6.9.0",
+    "extract-text-webpack-plugin": "2.0.0-rc.2",
+    "node-sass": "4.5.0",
+    "sass-loader": "4.1.1",
+    "style-loader": "0.13.1",
+    "stylelint-config-standard": "15.0.1",
+    "stylelint-webpack-plugin": "0.5.1",
+    "webpack": "2.2.1",
+    "webpack-manifest-plugin": "1.1.0"
+  }
+}
