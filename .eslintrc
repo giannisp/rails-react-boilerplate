@@ -1,0 +1,27 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-cond-assign": ["error", "always"],
+    "no-unused-vars": ["error", {"argsIgnorePattern": "state|action|dispatch"}],
+    "no-console": "off",
+    "no-extra-boolean-cast": "off",
+    "camelcase": 2
+  },
+  "globals": {}
+}
