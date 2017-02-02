@@ -18,3 +18,10 @@
 
 .ruby-gemset
 node_modules
+
+public/dist/js/*.js
+public/dist/js/*.map
+public/dist/js/*.json
+
+public/dist/css/*.css
+public/dist/css/*.map
