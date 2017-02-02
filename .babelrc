@@ -1,0 +1,4 @@
+{
+  "presets": ["es2015", "react"],
+  "only": ["app/assets/javascripts/*.js", "app/assets/javascripts/**/*.js"]
+}
