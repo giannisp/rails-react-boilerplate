@@ -2,7 +2,8 @@
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "env": {
     "es6": true,
-    "node": true
+    "node": true,
+    "browser": true
   },
   "parserOptions": {
     "ecmaVersion": 6,
@@ -22,6 +23,5 @@
     "no-console": "off",
     "no-extra-boolean-cast": "off",
     "camelcase": 2
-  },
-  "globals": {}
+  }
 }
