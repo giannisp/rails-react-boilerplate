@@ -1,8 +1,11 @@
 {
   "name": "rails-react-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate app for Rails and React, using webpack",
+  "description": "Rails / React / Redux / Webpack 2 boilerplate app.",
   "main": "index.js",
+  "engines": {
+    "node": "6.9.5"
+  },
   "directories": {
     "test": "test"
   },
