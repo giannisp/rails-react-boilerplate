@@ -17,21 +17,22 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'eslint-loader',
-            options: {configFile: './.eslintrc'},
-          },
-          {
-            loader: 'babel-loader',
-          }
-        ],
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        query: {
+          configFile: './.eslintrc',
+        },
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
       },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: 'css-loader?sourceMap&minimize!sass-loader?sourceMap',
+          fallback: 'style-loader',
+          use: 'css-loader?sourceMap&minimize!sass-loader?sourceMap',
         }),
       }
     ],
