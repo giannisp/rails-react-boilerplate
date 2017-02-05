@@ -9,7 +9,7 @@ module.exports = {
     app: './app/assets/javascripts/app.boot.js',
   },
   output: {
-    path: './public/dist/js',
+    path: './public/dist',
   },
   devtool: 'source-map',
   module: {

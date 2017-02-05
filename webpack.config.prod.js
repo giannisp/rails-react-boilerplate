@@ -9,7 +9,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 
 let config = require('./webpack.config.base');
 
-config.output.filename = 'app.[chunkhash:8].js';
+config.output.filename = 'js/app.[chunkhash:8].js';
 
 config.plugins = [
   new webpack.DefinePlugin({
@@ -18,8 +18,8 @@ config.plugins = [
     }
   }),
   new webpack.optimize.CommonsChunkPlugin({
-    name: 'vendor',
-    filename: 'app.vendor.[chunkhash:8].js',
+    name: 'app.vendor',
+    filename: 'js/app.vendor.[chunkhash:8].js',
     minChunks: module => /node_modules/.test(module.resource),
   }),
   new webpack.optimize.UglifyJsPlugin({
@@ -28,7 +28,7 @@ config.plugins = [
     },
     sourceMap: true,
   }),
-  new ExtractTextPlugin('../css/app.[chunkhash:8].css'),
+  new ExtractTextPlugin('css/app.[chunkhash:8].css'),
   new StyleLintPlugin({
     syntax: 'scss',
     failOnError: true,
