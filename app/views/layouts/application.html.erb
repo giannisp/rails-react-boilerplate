@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsReactBoilerplate</title>
+    <title>rails-react-boilerplate</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag asset_path('app.css', 'css'), media: 'all' %>
   </head>
 
   <body>
+    <div id="app"></div>
     <%= yield %>
+
+    <%= javascript_include_tag asset_path('app.vendor.js', 'js') %>
+    <%= javascript_include_tag asset_path('app.js', 'js') %>
   </body>
 </html>
