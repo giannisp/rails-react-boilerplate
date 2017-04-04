@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * @fileOverview Webpack configuration file for development.
  */
