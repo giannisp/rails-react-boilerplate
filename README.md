@@ -4,8 +4,8 @@ This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebo
 
 ## Features
 
-- Ruby on Rails 5.x
-- React 15.4.x
+- Ruby on Rails 5.1.1
+- React 15.5.x
 - Webpack 2.x
 - Babel 6.x
 - ESLint support
@@ -27,7 +27,7 @@ At any point, migration to a different backend (for example NodeJS) can be seaml
 
 ## Install
 
-It's recommended to use Ruby 2.3.x and NodeJS 6.9.x.
+It's recommended to use Ruby 2.3.x and NodeJS 6.10.x.
 
 ```sh
 # install bundler if not available
