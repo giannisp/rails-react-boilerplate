@@ -2,6 +2,7 @@
  * @fileOverview Webpack basic configuration file.
  */
 
+const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
     app: './front/js/app.boot.js',
   },
   output: {
-    path: './public/dist',
+    path: path.resolve(__dirname, 'public/dist'),
   },
   devtool: 'source-map',
   module: {
