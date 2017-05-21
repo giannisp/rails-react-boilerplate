@@ -3,6 +3,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class HelloWorld extends React.Component {
   render() {
@@ -25,6 +26,6 @@ export default class HelloWorld extends React.Component {
 
 /** @const {Object} propTypes definition */
 HelloWorld.propTypes = {
-  serverTimestamp: React.PropTypes.number,
-  onFetchServerTimestamp: React.PropTypes.func.isRequired,
+  serverTimestamp: PropTypes.number,
+  onFetchServerTimestamp: PropTypes.func.isRequired,
 };
