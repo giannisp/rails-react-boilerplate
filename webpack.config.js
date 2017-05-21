@@ -1,8 +1,8 @@
-'use strict';
-
 /**
  * @fileOverview Webpack configuration file for development.
  */
+
+'use strict';
 
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
