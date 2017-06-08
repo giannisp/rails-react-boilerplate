@@ -22,7 +22,7 @@ Webpack is a module bundler. It can bundle all JS files for usage in the browser
 The [NPM](https://www.npmjs.com/) ecosystem is huge, and Webpack makes it available in the simplest way possible.  
 Webpack can support every modern JS app, using ES6 or CommonJS modules, or both, create a single or multiple bundles, and in general can be customized to accomplish any application requirement. 
 
-The frontend assets on this repository are placed on a more accessible directory, at `/front/js` and `front/css`, rather than `app/assets/javascripts` and `app/assets/stylesheets`.  
+The frontend assets on this repository are placed on a more accessible directory, at `front/js` and `front/css`, rather than `app/assets/javascripts` and `app/assets/stylesheets`.  
 At any point, migration to a different backend (for example NodeJS) can be seamless since Webpack is running as a stand-alone bundler, there's absolutely no dependence to the Asset Pipeline or any other framework-specific module.  
 
 ## Install
