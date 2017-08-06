@@ -66,3 +66,16 @@ Builds the assets for production mode, output files are hashed.
 By default JS/CSS assets are being served from the `public/dist` directory. However in production it may be needed to serve assets from a CDN or an S3 bucket etc.  
 Simply override the `Rails.application.config.assets.root_path` property on the production environment to accomplish it.  
 Of course during the deployment script and after the `npm run webpack-production` command, `public/dist/*` output files should be copied to the target dir or infrastructure.
+
+## Run in Docker (optional)
+
+Repository contains a basic Dockerfile for running the app in production mode.  
+Assets should be compiled first using webpack outside of the container.  
+
+```sh
+# build docker image
+docker build -t rails-react-boilerplate .
+
+# run docker image
+docker run -p 3000:3000 -e SECRET_KEY_BASE=abcd rails-react-boilerplate
+```
