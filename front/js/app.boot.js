@@ -3,8 +3,9 @@
  */
 
 // Include the main scss file for webpack processing.
-require('../css/app.scss');
+import '../css/app.scss';
 
+import 'babel-polyfill';
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
@@ -14,9 +15,7 @@ import thunkMiddleware from 'redux-thunk';
 import rootReducer from './reducers/root-reducer.redux';
 import HelloWorld from './containers/hello-world.cont';
 
-let appBoot = module.exports = {};
-
-appBoot.init = function() {
+const init = () => {
   console.log('init() :: App starts booting...');
 
   // Check for devToolsExtension
@@ -38,4 +37,4 @@ appBoot.init = function() {
 };
 
 // init app
-appBoot.init();
+init();
