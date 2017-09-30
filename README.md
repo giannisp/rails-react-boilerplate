@@ -5,8 +5,8 @@ This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebo
 ## Features
 
 - Ruby on Rails 5.1.x
-- React 15.5.x
-- Webpack 2.x
+- React 16.x
+- Webpack 3.x
 - Babel 6.x
 - ESLint support
 - SASS and StyleLint support
