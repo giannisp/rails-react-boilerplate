@@ -27,7 +27,7 @@ At any point, migration to a different backend (for example NodeJS) can be seaml
 
 ## Install
 
-It's recommended to use Ruby 2.3.x and NodeJS 6.11.x.
+It's recommended to use Ruby 2.3.x and NodeJS 8.9.x.
 
 ```sh
 # install bundler if not available
