@@ -4,7 +4,7 @@
   "description": "Rails / React / Redux / Webpack 2 boilerplate app.",
   "main": "index.js",
   "engines": {
-    "node": "8.9.0"
+    "node": "8.9.1"
   },
   "directories": {
     "test": "test"
