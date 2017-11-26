@@ -9,7 +9,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: './front/js/app.boot.js',
+    app: './front/js/app.js',
   },
   output: {
     path: path.resolve(__dirname, 'public/dist'),
