@@ -1,4 +1,4 @@
-FROM ruby:2.3.4-alpine
+FROM ruby:2.4.3-alpine
 
 RUN apk add --update --no-cache build-base ruby-dev tzdata postgresql-dev \
  nodejs
