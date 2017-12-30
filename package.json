@@ -11,10 +11,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "./node_modules/webpack/bin/webpack.js --progress --colors",
-    "webpack-watch": "./node_modules/webpack/bin/webpack.js --progress --colors --watch",
-    "webpack-production": "./node_modules/webpack/bin/webpack.js --colors --config webpack.config.prod",
-    "eslint": "./node_modules/eslint/bin/eslint.js front/js"
+    "webpack": "node node_modules/webpack/bin/webpack.js --progress --colors",
+    "webpack-watch": "node node_modules/webpack/bin/webpack.js --progress --colors --watch",
+    "webpack-production": "node node_modules/webpack/bin/webpack.js --colors --config webpack.config.prod",
+    "eslint": "node node_modules/eslint/bin/eslint.js front/js"
   },
   "author": "IP",
   "license": "MIT",
