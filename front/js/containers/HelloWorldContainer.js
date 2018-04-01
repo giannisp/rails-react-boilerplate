@@ -1,5 +1,5 @@
 /**
- * @fileOverview Hello World container.
+ * @file Hello World container.
  */
 
 import { connect } from 'react-redux';

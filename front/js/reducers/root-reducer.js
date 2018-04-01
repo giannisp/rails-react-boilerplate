@@ -1,5 +1,5 @@
 /**
- * @fileOverview Root reducer, combines all reducers.
+ * @file Root reducer, combines all reducers.
  */
 
 import { combineReducers } from 'redux';

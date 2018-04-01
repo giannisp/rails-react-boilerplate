@@ -1,5 +1,5 @@
 /**
- * @fileOverview Webpack basic configuration file.
+ * @file Webpack basic configuration file.
  */
 
 const path = require('path');

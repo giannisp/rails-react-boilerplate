@@ -1,5 +1,5 @@
 /**
- * @fileOverview Frontend logger.
+ * @file Frontend logger.
  */
 
 import loglevel from 'loglevel';

@@ -1,5 +1,5 @@
 /**
- * @fileOverview Server Timestamp related actions.
+ * @file Server Timestamp related actions.
  */
 
 import axios from 'axios';

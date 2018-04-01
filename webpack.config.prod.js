@@ -1,5 +1,5 @@
 /**
- * @fileOverview Webpack configuration file for production.
+ * @file Webpack configuration file for production.
  */
 
 const webpack = require('webpack');

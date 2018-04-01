@@ -1,5 +1,5 @@
 /**
- * @fileOverview The Server Timestamp reducer.
+ * @file The Server Timestamp reducer.
  */
 
 import { SERVER_TIMESTAMP_UPDATE } from '../actions/server-timestamp';

@@ -1,5 +1,5 @@
 /**
- * @fileOverview App main entry point.
+ * @file App main entry point.
  */
 
 import 'babel-polyfill';

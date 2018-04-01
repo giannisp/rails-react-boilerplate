@@ -1,5 +1,5 @@
 /**
- * @fileOverview Webpack configuration file for development.
+ * @file Webpack configuration file for development.
  */
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
