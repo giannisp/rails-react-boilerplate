@@ -2,10 +2,8 @@
  * @fileOverview Webpack basic configuration file.
  */
 
-'use strict';
-
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
@@ -33,11 +31,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader?sourceMap&minimize!sass-loader?sourceMap',
-        }),
-      }
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader?sourceMap&minimize!sass-loader?sourceMap',
+        ],
+      },
     ],
   },
 };

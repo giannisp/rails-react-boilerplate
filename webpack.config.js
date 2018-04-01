@@ -2,27 +2,37 @@
  * @fileOverview Webpack configuration file for development.
  */
 
-'use strict';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const StyleLintPlugin = require('stylelint-bare-webpack-plugin');
 
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
+const config = require('./webpack.config.base');
 
-let config = require('./webpack.config.base');
+config.mode = 'development';
 
 config.output.filename = 'js/app.js';
 
 config.plugins = [
-  new webpack.optimize.CommonsChunkPlugin({
-    name: 'app.vendor',
-    filename: 'js/app.vendor.js',
-    minChunks: module => /node_modules/.test(module.resource),
+  new MiniCssExtractPlugin({
+    filename: 'css/app.css',
   }),
-  new ExtractTextPlugin('css/app.css'),
   new StyleLintPlugin({
     syntax: 'scss',
     failOnError: true,
   }),
 ];
+
+config.optimization = {
+  runtimeChunk: false,
+  splitChunks: {
+    cacheGroups: {
+      commons: {
+        test: /[\\/]node_modules[\\/]/,
+        name: 'app.vendor',
+        filename: 'js/app.vendor.js',
+        chunks: 'all',
+      },
+    },
+  },
+};
 
 module.exports = config;
