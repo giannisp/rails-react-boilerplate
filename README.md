@@ -4,7 +4,7 @@ This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebo
 
 ## Features
 
-- Ruby on Rails 5.1.x
+- Ruby on Rails 5.2.x
 - React 16.x
 - Webpack 4.x
 - Babel 6.x
