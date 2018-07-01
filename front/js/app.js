@@ -23,8 +23,9 @@ const init = () => {
   log.info('init() :: App starts booting...');
 
   // Check for devToolsExtension
-  const create = window.devToolsExtension ?
-    window.devToolsExtension()(createStore) : createStore;
+  const create = window.devToolsExtension
+    ? window.devToolsExtension()(createStore)
+    : createStore;
 
   // Apply thunk and additional middleware if applicable
   const createStoreWithMiddleware = applyMiddleware(thunkMiddleware)(create);
