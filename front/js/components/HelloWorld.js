@@ -12,7 +12,9 @@ class HelloWorld extends React.Component {
   };
 
   componentDidMount() {
-    this.props.fetchServerTimestamp();
+    const { fetchServerTimestamp } = this.props;
+
+    fetchServerTimestamp();
   }
 
   render() {
