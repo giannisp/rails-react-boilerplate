@@ -7,7 +7,7 @@ This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebo
 - Ruby on Rails 5.2.x
 - React 16.x
 - Webpack 4.x
-- Babel 6.x
+- Babel 7.x
 - ESLint support
 - SASS and StyleLint support
 - Hashed filenames for production assets
