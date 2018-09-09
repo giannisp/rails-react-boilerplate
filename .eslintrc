@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb"],
+  "extends": ["airbnb", "plugin:prettier/recommended"],
   "plugins": ["babel"],
   "parser": "babel-eslint",
   "env": {
@@ -7,9 +7,6 @@
   },
   "rules": {
     "arrow-body-style": 0,
-    "function-paren-newline": 0,
-    "import/prefer-default-export": 0,
-    "react/jsx-curly-spacing": [2, { "when": "never", "children": true }],
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/require-default-props": 0

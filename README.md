@@ -9,6 +9,7 @@ This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebo
 - Webpack 4.x
 - Babel 7.x
 - ESLint support
+- Prettier support
 - SASS and StyleLint support
 - Hashed filenames for production assets
 - Separate app and vendor JS bundles
