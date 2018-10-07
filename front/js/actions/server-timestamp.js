@@ -10,11 +10,11 @@ const log = getLogger('ServerTimestampAction');
 
 export const SERVER_TIMESTAMP_UPDATE = 'server-timestamp/UPDATE';
 
-const serverTimestampUpdate = (timestamp) => {
+const serverTimestampUpdate = timestamp => {
   return { type: SERVER_TIMESTAMP_UPDATE, timestamp };
 };
 
-export const fetchServerTimestamp = () => async (dispatch) => {
+export const fetchServerTimestamp = () => async dispatch => {
   try {
     const res = await axios.get('/home/timestamp');
 
