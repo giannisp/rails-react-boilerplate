@@ -51,7 +51,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
-    "mini-css-extract-plugin": "^0.4.4",
+    "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.10.0",
     "prettier": "^1.15.2",
     "sass-loader": "^7.1.0",
@@ -60,7 +60,7 @@
     "stylelint-bare-webpack-plugin": "^1.0.2",
     "stylelint-config-standard": "^18.2.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.25.1",
+    "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
     "webpack-manifest-plugin": "^2.0.4"
   }
