@@ -5,7 +5,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { TimestampContext } from './TimestampProvider';
+
 export default class Timestamp extends React.Component {
+  static contextType = TimestampContext;
+
   static propTypes = {
     timestamp: PropTypes.number,
     fetchTimestamp: PropTypes.func.isRequired,
@@ -16,13 +20,13 @@ export default class Timestamp extends React.Component {
   }
 
   fetchTimestamp = () => {
-    const { fetchTimestamp } = this.props;
+    const { fetchTimestamp } = this.context;
 
     fetchTimestamp();
   };
 
   render() {
-    const { timestamp } = this.props;
+    const { timestamp } = this.context;
 
     return (
       <>

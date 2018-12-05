@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import TimestampProvider, { TimestampContext } from './TimestampProvider';
+import TimestampProvider from './TimestampProvider';
 import Timestamp from './Timestamp';
 
 const App = () => {
@@ -13,9 +13,7 @@ const App = () => {
       <h1>Hello World!</h1>
 
       <TimestampProvider>
-        <TimestampContext.Consumer>
-          {context => <Timestamp {...context} />}
-        </TimestampContext.Consumer>
+        <Timestamp />
       </TimestampProvider>
     </div>
   );
