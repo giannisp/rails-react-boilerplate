@@ -21,7 +21,10 @@ export default class TimestampProvider extends PureComponent {
   };
 
   state = {
+    // eslint-disable-next-line react/no-unused-state
     timestamp: null,
+    // eslint-disable-next-line react/no-unused-state
+    fetchTimestamp: () => this.fetchTimestamp(),
   };
 
   fetchTimestamp = async () => {
@@ -38,12 +41,9 @@ export default class TimestampProvider extends PureComponent {
 
   render() {
     const { children } = this.props;
-    const { timestamp } = this.state;
 
     return (
-      <TimestampContext.Provider
-        value={{ timestamp, fetchTimestamp: this.fetchTimestamp }}
-      >
+      <TimestampContext.Provider value={this.state}>
         {children}
       </TimestampContext.Provider>
     );
