@@ -3,17 +3,11 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { TimestampContext } from './TimestampProvider';
 
 export default class Timestamp extends React.Component {
   static contextType = TimestampContext;
-
-  static propTypes = {
-    timestamp: PropTypes.number,
-    fetchTimestamp: PropTypes.func.isRequired,
-  };
 
   componentDidMount() {
     this.fetchTimestamp();
