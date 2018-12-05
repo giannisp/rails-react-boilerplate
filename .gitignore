@@ -26,3 +26,5 @@ public/dist/js/*.map
 
 public/dist/css/*.css
 public/dist/css/*.map
+
+.vscode
