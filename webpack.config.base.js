@@ -4,6 +4,8 @@
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 module.exports = {
   entry: {
@@ -34,6 +36,13 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           { loader: 'css-loader', options: { sourceMap: true } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [autoprefixer(), cssnano()],
+              sourceMap: true,
+            },
+          },
           { loader: 'sass-loader', options: { sourceMap: true } },
         ],
       },
