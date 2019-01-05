@@ -32,6 +32,7 @@ export default class TimestampProvider extends PureComponent {
       const res = await axios.get('/home/timestamp');
 
       this.setState(() => ({
+        // eslint-disable-next-line react/no-unused-state
         timestamp: res.data.timestamp,
       }));
     } catch (error) {
