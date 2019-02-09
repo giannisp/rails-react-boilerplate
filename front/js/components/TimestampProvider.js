@@ -2,51 +2,32 @@
  * @file TimestampProvider component.
  */
 
-import React, { PureComponent } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
 import getLogger from '../utils/logger';
 
-const log = getLogger('TimestampContext');
+const log = getLogger('TimestampProvider');
 
-export const TimestampContext = React.createContext({
-  timestamp: null,
-  fetchTimestamp: () => {},
-});
+const TimestampProvider = ({ children }) => {
+  const [timestamp, setTimestamp] = useState(null);
 
-export default class TimestampProvider extends PureComponent {
-  static propTypes = {
-    children: PropTypes.node,
-  };
-
-  state = {
-    // eslint-disable-next-line react/no-unused-state
-    timestamp: null,
-    // eslint-disable-next-line react/no-unused-state
-    fetchTimestamp: () => this.fetchTimestamp(),
-  };
-
-  fetchTimestamp = async () => {
+  const fetchTimestamp = async () => {
     try {
       const res = await axios.get('/home/timestamp');
 
-      this.setState(() => ({
-        // eslint-disable-next-line react/no-unused-state
-        timestamp: res.data.timestamp,
-      }));
+      setTimestamp(res.data.timestamp);
     } catch (error) {
       log.error(error);
     }
   };
 
-  render() {
-    const { children } = this.props;
+  return <>{children({ timestamp, fetchTimestamp })}</>;
+};
 
-    return (
-      <TimestampContext.Provider value={this.state}>
-        {children}
-      </TimestampContext.Provider>
-    );
-  }
-}
+TimestampProvider.propTypes = {
+  children: PropTypes.func.isRequired,
+};
+
+export default TimestampProvider;

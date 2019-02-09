@@ -12,9 +12,7 @@ const App = () => {
     <div>
       <h1>Hello World!</h1>
 
-      <TimestampProvider>
-        <Timestamp />
-      </TimestampProvider>
+      <TimestampProvider>{props => <Timestamp {...props} />}</TimestampProvider>
     </div>
   );
 };
