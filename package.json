@@ -25,12 +25,12 @@
     "axios": "^0.18.0",
     "loglevel": "^1.6.1",
     "loglevel-plugin-prefix": "^0.8.4",
-    "prop-types": "^15.6.2",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.3.3",
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
     "@babel/preset-env": "^7.3.1",
@@ -39,8 +39,8 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
-    "cssnano": "^4.1.8",
-    "eslint": "^5.13.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.14.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-loader": "^2.1.2",
@@ -59,7 +59,7 @@
     "stylelint-bare-webpack-plugin": "^1.0.2",
     "stylelint-config-standard": "^18.2.0",
     "uglifyjs-webpack-plugin": "^2.1.1",
-    "webpack": "^4.29.3",
+    "webpack": "^4.29.4",
     "webpack-cli": "^3.2.3",
     "webpack-manifest-plugin": "^2.0.4"
   }
