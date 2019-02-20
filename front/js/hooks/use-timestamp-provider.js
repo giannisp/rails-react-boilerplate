@@ -1,16 +1,15 @@
 /**
- * @file TimestampProvider component.
+ * @file TimestampProvider hook.
  */
 
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import axios from 'axios';
 
 import getLogger from '../utils/logger';
 
 const log = getLogger('TimestampProvider');
 
-const TimestampProvider = ({ children }) => {
+const useTimestampProvider = () => {
   const [timestamp, setTimestamp] = useState(null);
 
   const fetchTimestamp = async () => {
@@ -23,11 +22,7 @@ const TimestampProvider = ({ children }) => {
     }
   };
 
-  return children({ timestamp, fetchTimestamp });
+  return [timestamp, fetchTimestamp];
 };
 
-TimestampProvider.propTypes = {
-  children: PropTypes.func.isRequired,
-};
-
-export default TimestampProvider;
+export default useTimestampProvider;

@@ -3,9 +3,12 @@
  */
 
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 
-const Timestamp = ({ timestamp, fetchTimestamp }) => {
+import useTimestampProvider from '../hooks/use-timestamp-provider';
+
+const Timestamp = () => {
+  const [timestamp, fetchTimestamp] = useTimestampProvider();
+
   useEffect(() => {
     fetchTimestamp();
   }, []);
@@ -18,11 +21,6 @@ const Timestamp = ({ timestamp, fetchTimestamp }) => {
       </button>
     </>
   );
-};
-
-Timestamp.propTypes = {
-  timestamp: PropTypes.number,
-  fetchTimestamp: PropTypes.func.isRequired,
 };
 
 export default Timestamp;
