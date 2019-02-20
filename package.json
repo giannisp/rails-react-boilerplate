@@ -12,8 +12,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "node node_modules/webpack-cli/bin/cli.js --progress --colors",
-    "webpack-watch": "node node_modules/webpack-cli/bin/cli.js --progress --colors --watch",
-    "webpack-production": "node node_modules/webpack-cli/bin/cli.js --colors --config webpack.config.prod",
+    "webpack:watch": "node node_modules/webpack-cli/bin/cli.js --progress --colors --watch",
+    "webpack:production": "node node_modules/webpack-cli/bin/cli.js --colors --config webpack.config.prod",
     "eslint": "node node_modules/eslint/bin/eslint.js front/js"
   },
   "author": "IP",

@@ -21,10 +21,10 @@ This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebo
 Why Webpack?  
 Webpack is a module bundler. It can bundle all JS files for usage in the browser, but can also transform / bundle / package any resource or frontend asset.  
 The [NPM](https://www.npmjs.com/) ecosystem is huge, and Webpack makes it available in the simplest way possible.  
-Webpack can support every modern JS app, using ES6 or CommonJS modules, or both, create a single or multiple bundles, and in general can be customized to accomplish any application requirement. 
+Webpack can support every modern JS app, using ES6 or CommonJS modules, or both, create a single or multiple bundles, and in general can be customized to accomplish any application requirement.
 
 The frontend assets on this repository are placed on a more accessible directory, at `front/js` and `front/css`, rather than `app/assets/javascripts` and `app/assets/stylesheets`.  
-At any point, migration to a different backend (for example NodeJS) can be seamless since Webpack is running as a stand-alone bundler, there's absolutely no dependence to the Asset Pipeline or any other framework-specific module.  
+At any point, migration to a different backend (for example NodeJS) can be seamless since Webpack is running as a stand-alone bundler, there's absolutely no dependence to the Asset Pipeline or any other framework-specific module.
 
 ## Install
 
@@ -56,10 +56,10 @@ rails s
 `npm run webpack`  
 Builds the assets for development mode.
 
-`npm run webpack-watch`  
+`npm run webpack:watch`  
 Builds the assets for development mode, and rebuilds on every detected change.
 
-`npm run webpack-production`  
+`npm run webpack:production`  
 Builds the assets for production mode, output files are hashed.
 
 ## Load assets in production from a custom root directory or URL
@@ -71,7 +71,7 @@ Of course during the deployment script and after the `npm run webpack-production
 ## Run in Docker (optional)
 
 Repository contains a basic Dockerfile for running the app in production mode.  
-Assets should be compiled first using webpack outside of the container.  
+Assets should be compiled first using webpack outside of the container.
 
 ```sh
 # build docker image
