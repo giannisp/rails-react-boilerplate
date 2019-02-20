@@ -2,7 +2,7 @@
  * @file TimestampProvider component.
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
@@ -23,7 +23,7 @@ const TimestampProvider = ({ children }) => {
     }
   };
 
-  return <>{children({ timestamp, fetchTimestamp })}</>;
+  return children({ timestamp, fetchTimestamp });
 };
 
 TimestampProvider.propTypes = {
