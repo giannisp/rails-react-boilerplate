@@ -1,6 +1,6 @@
 # rails-react-boilerplate
 
-This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebook.github.io/react/) / [Redux](https://github.com/reactjs/redux) / [Webpack 4](https://webpack.js.org/) boilerplate app.
+This is a pure [Ruby on Rails](http://rubyonrails.org/) / [React](https://facebook.github.io/react/) / [Webpack 4](https://webpack.js.org/) boilerplate app.
 
 ## Features
 

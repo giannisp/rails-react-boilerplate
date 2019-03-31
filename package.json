@@ -1,7 +1,7 @@
 {
   "name": "rails-react-boilerplate",
   "version": "1.0.0",
-  "description": "Rails / React / Redux / Webpack 2 boilerplate app.",
+  "description": "Rails / React / Webpack 2 boilerplate app.",
   "main": "index.js",
   "engines": {
     "node": "10.15.2"
