@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
   "plugins": ["babel"],
   "parser": "babel-eslint",
   "env": {
@@ -8,7 +8,6 @@
   "rules": {
     "arrow-body-style": 0,
     "react/jsx-filename-extension": 0,
-    "react/jsx-one-expression-per-line": 0,
     "react/require-default-props": 0
   }
 }
