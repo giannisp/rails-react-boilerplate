@@ -28,8 +28,8 @@
     "loglevel": "^1.6.3",
     "loglevel-plugin-prefix": "^0.8.4",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -40,7 +40,7 @@
     "autoprefixer": "^9.6.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
-    "css-loader": "^3.1.0",
+    "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
@@ -55,8 +55,8 @@
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
+    "sass-loader": "^7.2.0",
+    "style-loader": "^1.0.0",
     "stylelint": "^10.1.0",
     "stylelint-bare-webpack-plugin": "^1.1.2",
     "stylelint-config-standard": "^18.3.0",
