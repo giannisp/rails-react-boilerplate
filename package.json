@@ -4,7 +4,7 @@
   "description": "Rails / React / Webpack 2 boilerplate app.",
   "main": "index.js",
   "engines": {
-    "node": "12.13.1"
+    "node": "12.14.0"
   },
   "directories": {
     "test": "test"
