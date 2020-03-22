@@ -10,7 +10,7 @@ loglevel.setLevel(loglevel.levels.DEBUG);
 prefix.reg(loglevel);
 prefix.apply(loglevel, { template: '%t [%n] %l:' });
 
-const getLogger = name => {
+const getLogger = (name) => {
   return loglevel.getLogger(name);
 };
 
