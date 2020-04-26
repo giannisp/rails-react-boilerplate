@@ -62,7 +62,7 @@
     "stylelint": "^13.3.3",
     "stylelint-bare-webpack-plugin": "^2.0.1",
     "stylelint-config-standard": "^20.0.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
+    "terser-webpack-plugin": "^2.3.6",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-manifest-plugin": "^2.2.0"

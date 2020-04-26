@@ -3,7 +3,7 @@
  */
 
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StyleLintPlugin = require('stylelint-bare-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
@@ -20,11 +20,6 @@ config.plugins = [
       NODE_ENV: JSON.stringify('production'),
     },
   }),
-  new UglifyJsPlugin({
-    cache: true,
-    parallel: true,
-    sourceMap: true,
-  }),
   new MiniCssExtractPlugin({
     filename: 'css/app.[chunkhash:8].css',
   }),
@@ -38,6 +33,24 @@ config.plugins = [
 ];
 
 config.optimization = {
+  minimize: true,
+  minimizer: [
+    new TerserWebpackPlugin({
+      terserOptions: {
+        compress: {
+          comparisons: false,
+          warnings: false,
+        },
+        mangle: {
+          safari10: true,
+        },
+        output: {
+          comments: false,
+          ascii_only: true, // eslint-disable-line babel/camelcase
+        },
+      },
+    }),
+  ],
   runtimeChunk: false,
   splitChunks: {
     cacheGroups: {
