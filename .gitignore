@@ -22,6 +22,7 @@ node_modules
 public/dist/*.json
 
 public/dist/js/*.js
+public/dist/js/*.txt
 public/dist/js/*.map
 
 public/dist/css/*.css
