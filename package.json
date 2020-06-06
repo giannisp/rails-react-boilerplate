@@ -28,7 +28,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "sass": "^1.26.7"
+    "sass": "^1.26.8"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -59,10 +59,10 @@
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
-    "stylelint": "^13.5.0",
+    "stylelint": "^13.6.0",
     "stylelint-bare-webpack-plugin": "^2.0.1",
     "stylelint-config-standard": "^20.0.0",
-    "terser-webpack-plugin": "^3.0.2",
+    "terser-webpack-plugin": "^3.0.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-manifest-plugin": "^2.2.0"
