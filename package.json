@@ -31,7 +31,7 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
@@ -41,7 +41,7 @@
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "css-loader": "^4.2.0",
+    "css-loader": "^4.2.1",
     "cssnano": "^4.1.10",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
@@ -57,12 +57,12 @@
     "node-sass": "^4.14.1",
     "postcss-loader": "^3.0.0",
     "prettier": "^2.0.5",
-    "sass-loader": "^9.0.2",
+    "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
     "stylelint": "^13.6.1",
     "stylelint-bare-webpack-plugin": "^2.0.2",
     "stylelint-config-standard": "^20.0.0",
-    "terser-webpack-plugin": "^3.0.8",
+    "terser-webpack-plugin": "^4.0.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-manifest-plugin": "^2.2.0"
