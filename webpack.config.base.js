@@ -39,7 +39,9 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [autoprefixer(), cssnano()],
+              postcssOptions: {
+                plugins: () => [autoprefixer(), cssnano()],
+              },
               sourceMap: true,
             },
           },
