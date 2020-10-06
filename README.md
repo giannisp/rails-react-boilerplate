@@ -68,6 +68,16 @@ By default JS/CSS assets are being served from the `public/dist` directory. Howe
 Simply override the `Rails.application.config.assets.root_path` property on the production environment to accomplish it.  
 Of course during the deployment script and after the `npm run webpack-production` command, `public/dist/*` output files should be copied to the target dir or infrastructure.
 
+## Run in production
+
+```
+# build assets
+npm run webpack:production
+
+# run rails server
+SECRET_KEY_BASE=abcd RAILS_SERVE_STATIC_FILES=true rails s -e production
+```
+
 ## Run in Docker (optional)
 
 Repository contains a basic Dockerfile for running the app in production mode.  
